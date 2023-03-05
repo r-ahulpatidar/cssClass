@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+        h1 {
+            color: green;
+        }
+        .red {
+            color: red
+        }
+        div .intro {
+            background-color: orange;
+        }
+        .white {
+            color: white
+        }
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Selectors</h1>
+        <div style="border: 1px solid black;">
+            <p>This is the <span class="red"><i>first</i></span> paragraph.</p>
+            <p class="intro">This is an <span class="white"><i>important</i></span> paragraph inside the Intro div.</p>
+        </div>
+        <p>This is a regular paragraph.</p>
+        <p class="yellow">This is an <span class="red"><i>important</i></span> paragraph that is not in the Intro div</p>
+    </div>
+</body>
+</html>
