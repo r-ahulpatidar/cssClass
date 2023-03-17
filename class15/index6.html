@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100%;
+            padding: 15px;
+            /* position: fixed;
+            top: 0px; */
+            background-color: #333;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            float: right;
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        /* .nav {
+             padding: 25px;
+        } */
+        li a:hover:not(.active) {
+             background-color: black;
+             text-decoration: underline;
+        }
+        .active {
+             background-color: #04aa6d;
+        }
+        .left {
+             float: left;
+        }
+        .column {
+             display: inline-block;
+             width: 50%;
+        }
+        .row::after {
+             content: "";
+             display: table;
+             clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+  <ul>
+    <li class="left"><a href="#"><img src="https://cms.primathonacademy.com/uploads/logo_ba21ef699f.png" alt="mylogo" style="margin: 5px 5px 0px 5px;" /></a></li>
+    <li><a href="#" class="nav">Contact</a></li>
+    <li><a href="#" class="nav">About</a></li>
+    <li><a href="#" class="nav">News</a></li>
+    <li><a href="#" class="nav active">Home</a></li>
+  </ul>
+</header>
+<div class="row">
+  <div class="column">
+    <h1>Heading-1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="column"></div>
+</div>
+</body>
+</html>

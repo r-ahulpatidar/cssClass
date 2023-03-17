@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-assignment-medium</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 5px;
+            text-align: center;
+            background-color: coral;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-container :nth-child(1) {
+            background-color: yellow;
+            flex: 20%;
+            text-align: center;
+            padding: 10px;
+        }
+        .flex-container :nth-child(2) {
+            background-color: skyblue;
+            flex: 60%;
+            text-align: center;
+            padding: 10px;
+        }
+        .flex-container :nth-child(3) {
+            background-color: magenta;
+            flex: 20%;
+            text-align: center;
+            padding: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: springgreen;
+            padding: 20px;
+            font-size: 30px;
+        }
+        @media  screen and (max-width: 500px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <div class="flex-container">
+        <div>Aside 1</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum numquam voluptas cumque vel rerum sequi magni doloribus labore illum doloremque, temporibus nulla nihil nemo officia est fugiat perferendis odio inventore?</div>
+        <div>Aside 3</div>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>

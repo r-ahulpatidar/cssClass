@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-medium screen</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: coral;
+            text-align: center;
+            padding: 5px;
+        }
+        p.content {
+            background-color: lightskyblue;
+            padding: 20px;
+            margin: 0px auto;
+            text-align: justify;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            font-size: 18px;
+        }
+        .flex-container :nth-child(1) {
+            background-color: yellow;
+            flex: 50%;
+            padding: 20px;
+        }
+        .flex-container :nth-child(2) {
+            background-color: magenta;
+            flex: 50%;
+            padding: 20px;
+        }
+        footer {
+            background-color: springgreen;
+            text-align: center;
+            padding: 5px;
+            font-size: 20px;
+        }
+        @media screen and (max-width: 500px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui recusandae, sapiente voluptatem similique quis voluptate voluptatum optio necessitatibus tempore ipsam cumque perspiciatis quisquam sequi, totam autem nisi deserunt veniam? Laudantium distinctio iusto vitae est architecto voluptatum quod illum, similique, praesentium unde incidunt cupiditate eos. Accusantium dolorem ullam fugit quae non.</p>
+    <div class="flex-container">
+        <div>Aside 1</div>
+        <div>Aside 2</div>
+    </div>
+    <footer><h2>Footer</h2></footer>
+</body>
+</html>
