@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .wrapper {
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+        }
+        .wrapper > div {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin: 20px;
+        }
+        div .a {
+            transition: all 2s ease-in-out 0s;
+        }
+        div .b {
+            transition: all 2s ease-in-out 1s;
+        }
+        div .c {
+            transition: all 2s ease-in-out 2s;
+        }
+        div .d {
+            transition: all 2s ease-in-out 3s;
+        }
+        .wrapper:hover > div {
+            margin-left: 200px;
+            background-color: green;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background-color: #8BC6EC;
+background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%);
+
+        }
+        .wrapper {
+            margin-top: 200px;
+        }
+        .big_circle {
+            animation: pulse 1.5s alternate infinite;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .small_circle {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .small_circle:hover {
+            animation: shake .1s alternate infinite;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.5);
+            }
+        }
+        @keyframes shake {
+            0% {
+                transform: translate(0%);
+            }
+            25%, 75% {
+                transform: translateY(1%);
+            }
+            50%, 100% {
+                transform: translateX(1%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="big_circle">
+            <div class="small_circle"></div>
+        </div>
+    </div>
+</body>
+</html>

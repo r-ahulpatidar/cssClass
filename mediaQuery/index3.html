@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .column1 {
+            background-color: #aaa;
+        }
+        .column2 {
+            background-color: #bbb;
+        }
+        .column3 {
+            background-color: #ccc;
+        }
+        .column4 {
+            background-color: #ddd;
+        }
+        @media only screen and  (min-width: 600px) and (max-width: 992px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .container > * {
+                flex: 2 0 50%;
+            }
+        }
+        @media only screen and (min-width: 992px) {
+            .container {
+                flex-direction: row;
+            }
+            .container > * {
+                flex: 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>column layout using flexbox</h1>
+    <div class="container">
+        <div class="column1">
+            <h1>Column 1</h1>
+            <p>Some text...</p>
+        </div>
+        <div class="column2"><h1>Column 2</h1>
+            <p>Some text...</p>
+        </div>
+        <div class="column3">
+            <h1>Column 3</h1>
+            <p>Some text...</p>
+        </div>
+        <div class="column4">
+            <h1>Column 4</h1>
+            <p>Some text...</p>
+        </div>
+    </div>
+</body>
+</html>
